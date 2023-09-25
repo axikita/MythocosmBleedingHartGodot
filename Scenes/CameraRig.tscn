@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqp7vp5ebyx1j"]
+
+[ext_resource type="Script" path="res://Scenes/CameraRig.gd" id="1_oftdb"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_8rcph"]
+radius = 0.05
+height = 0.1
+
+[sub_resource type="BoxMesh" id="BoxMesh_ov0uh"]
+size = Vector3(0.2, 0.1, 0.2)
+
+[node name="CameraRigRoot" type="Node3D" groups=["CameraRoot"]]
+script = ExtResource("1_oftdb")
+MotionEnabled = false
+camSpeedSensitivityVert = 3
+camSpeedSensitivityHoriz = 4
+
+[node name="CameraRigTarget" type="Node3D" parent="." groups=["CameraRig"]]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraRigTarget"]
+spring_length = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraRigTarget/SpringArm3D" groups=["CameraRig"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+far = 500.0
+
+[node name="DebugTarget" type="MeshInstance3D" parent="CameraRigTarget"]
+visible = false
+mesh = SubResource("SphereMesh_8rcph")
+
+[node name="DebugRoot" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+visible = false
+mesh = SubResource("BoxMesh_ov0uh")

@@ -1,0 +1,14 @@
+[gd_resource type="Environment" format=3 uid="uid://n6kvdwkr2ve7"]
+
+[resource]
+background_mode = 1
+background_color = Color(0.101961, 0.117647, 0.160784, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.14902, 0.137255, 0.317647, 1)
+sdfgi_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.109804, 0.105882, 0.196078, 1)
+fog_density = 0.02
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+volumetric_fog_temporal_reprojection_amount = 0.99

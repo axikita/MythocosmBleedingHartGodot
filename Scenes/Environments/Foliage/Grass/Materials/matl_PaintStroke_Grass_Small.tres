@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://cyv1m0gddvlf"]
+
+[ext_resource type="Shader" path="res://Scenes/Environments/Foliage/Grass/Shaders/PaintstrokeGrass_Shader.gdshader" id="1_sohik"]
+[ext_resource type="Texture2D" uid="uid://d05ouojosfhev" path="res://Scenes/Environments/Foliage/Grass/Textures/Grass_White_4Strokes_256.png" id="2_scrs4"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_sohik")
+shader_parameter/mainColor = Color(0, 0.47451, 0.552941, 1)
+shader_parameter/rootColor = Color(0, 0.376471, 0.541176, 1)
+shader_parameter/subsurfColor = Color(0, 0, 0, 1)
+shader_parameter/pinch = 0.0
+shader_parameter/playerPosition = Vector3(1e+07, 1e+07, 1e+07)
+shader_parameter/interactionStrength = 0.5
+shader_parameter/radius = 1.0
+shader_parameter/albedoTex = ExtResource("2_scrs4")

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://c1ue25dxy4py6"]
+
+[ext_resource type="Shader" path="res://Scenes/Environments/Foliage/Grass/Shaders/ScaleableTiling.gdshader" id="1_yvyg6"]
+[ext_resource type="Texture2D" uid="uid://b4a83u0enko0f" path="res://Scenes/Environments/Foliage/Grass/Textures/Grass_Tiling_TealBrushstroke_1024.png" id="2_sdhky"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_yvyg6")
+shader_parameter/mainColor = Color(0.607843, 0.639216, 0.619608, 1)
+shader_parameter/uvScale = 20.0
+shader_parameter/albedoTex = ExtResource("2_sdhky")

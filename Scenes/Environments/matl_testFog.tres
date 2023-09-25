@@ -1,0 +1,9 @@
+[gd_resource type="FogMaterial" load_steps=2 format=3 uid="uid://w1w8q5gnx88d"]
+
+[ext_resource type="NoiseTexture3D" uid="uid://b7qup5hqw6ado" path="res://Scenes/Environments/Fog_NoiseTexture3d.tres" id="1_qny5m"]
+
+[resource]
+density = 0.1
+albedo = Color(0.623529, 0.854902, 0.984314, 1)
+edge_fade = 0.292817
+density_texture = ExtResource("1_qny5m")

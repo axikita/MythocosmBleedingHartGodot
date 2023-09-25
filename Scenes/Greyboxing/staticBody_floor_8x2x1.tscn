@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwh52jeinesuy"]
+
+[ext_resource type="Material" uid="uid://diake8k7lrks6" path="res://Scenes/Greyboxing/greyboxMat.tres" id="1_bceeh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yiouu"]
+size = Vector3(8, 1, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4hua7"]
+size = Vector3(8, 1, 2)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -0.5, 0)
+shape = SubResource("BoxShape3D_yiouu")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -0.5, 0)
+material_override = ExtResource("1_bceeh")
+mesh = SubResource("BoxMesh_4hua7")
