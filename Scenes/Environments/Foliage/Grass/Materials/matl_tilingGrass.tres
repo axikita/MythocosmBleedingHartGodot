@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://c1ue25dxy4py6"]
 
-[ext_resource type="Shader" path="res://Scenes/Environments/Foliage/Grass/Shaders/ScaleableTiling.gdshader" id="1_yvyg6"]
+[ext_resource type="Shader" path="res://Scenes/Environments/Foliage/Grass/Shaders/scaleable_tiling.gdshader" id="1_yvyg6"]
 [ext_resource type="Texture2D" uid="uid://b4a83u0enko0f" path="res://Scenes/Environments/Foliage/Grass/Textures/Grass_Tiling_TealBrushstroke_1024.png" id="2_sdhky"]
 
 [resource]

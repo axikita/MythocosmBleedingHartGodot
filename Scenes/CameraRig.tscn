@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dqp7vp5ebyx1j"]
 
-[ext_resource type="Script" path="res://Scenes/CameraRig.gd" id="1_oftdb"]
+[ext_resource type="Script" path="res://Scenes/camera_rig.gd" id="1_y5wal"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_8rcph"]
 radius = 0.05
@@ -10,7 +10,7 @@ height = 0.1
 size = Vector3(0.2, 0.1, 0.2)
 
 [node name="CameraRigRoot" type="Node3D" groups=["CameraRoot"]]
-script = ExtResource("1_oftdb")
+script = ExtResource("1_y5wal")
 MotionEnabled = false
 camSpeedSensitivityVert = 3
 camSpeedSensitivityHoriz = 4

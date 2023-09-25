@@ -1,20 +1,20 @@
 [gd_scene load_steps=7 format=3 uid="uid://ohf6pfhfa7kb"]
 
-[ext_resource type="PackedScene" uid="uid://dqp7vp5ebyx1j" path="res://Scenes/CameraRig.tscn" id="1_nhlhc"]
-[ext_resource type="PackedScene" uid="uid://bfl4rneyph7d2" path="res://Scenes/Environments/test_environment.tscn" id="2_tsssv"]
-[ext_resource type="Environment" uid="uid://n6kvdwkr2ve7" path="res://Rendering/new_environment.tres" id="3_xn4ct"]
-[ext_resource type="PackedScene" uid="uid://bqh7apn0uhx6t" path="res://Scenes/Characters/BleedingHart/player_bleedingHart.tscn" id="4_qrywd"]
-[ext_resource type="Material" uid="uid://w1w8q5gnx88d" path="res://Scenes/Environments/matl_testFog.tres" id="5_6v807"]
-[ext_resource type="PackedScene" uid="uid://bx53uk10s5b34" path="res://Scenes/Environments/Foliage/Grass/GrassTest.tscn" id="6_jwhpx"]
+[ext_resource type="PackedScene" uid="uid://dqp7vp5ebyx1j" path="res://Scenes/CameraRig.tscn" id="1_6h26d"]
+[ext_resource type="PackedScene" uid="uid://bqh7apn0uhx6t" path="res://Scenes/Characters/BleedingHart/Player_BleedingHart.tscn" id="2_p7eca"]
+[ext_resource type="PackedScene" uid="uid://bfl4rneyph7d2" path="res://Scenes/Environments/test_environment.tscn" id="3_t6fm0"]
+[ext_resource type="Environment" uid="uid://n6kvdwkr2ve7" path="res://Rendering/new_environment.tres" id="4_f66o0"]
+[ext_resource type="Material" uid="uid://w1w8q5gnx88d" path="res://Scenes/Environments/matl_testFog.tres" id="5_wu6un"]
+[ext_resource type="PackedScene" uid="uid://bx53uk10s5b34" path="res://Scenes/Environments/Foliage/Grass/GrassTest.tscn" id="6_w7qyo"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="CameraRigRoot" parent="." instance=ExtResource("1_nhlhc")]
+[node name="CameraRigRoot" parent="." instance=ExtResource("1_6h26d")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 0, 0, 0)
 
-[node name="player_bleedingHart" parent="." instance=ExtResource("4_qrywd")]
+[node name="player_bleedingHart" parent="." instance=ExtResource("2_p7eca")]
 
-[node name="test_environment" parent="." instance=ExtResource("2_tsssv")]
+[node name="test_environment" parent="." instance=ExtResource("3_t6fm0")]
 
 [node name="Lighting" type="Node3D" parent="."]
 
@@ -24,16 +24,16 @@ light_energy = 0.2
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
-environment = ExtResource("3_xn4ct")
+environment = ExtResource("4_f66o0")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lighting"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.41843, -2.10811)
-light_color = Color(0, 0.635294, 0.635294, 1)
+light_color = Color(0, 0.807843, 0.807843, 1)
 light_energy = 6.0
 
 [node name="FogVolume" type="FogVolume" parent="."]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 20, 0, 0)
 shape = 0
-material = ExtResource("5_6v807")
+material = ExtResource("5_wu6un")
 
-[node name="GrassTest" parent="." instance=ExtResource("6_jwhpx")]
+[node name="GrassTest" parent="." instance=ExtResource("6_w7qyo")]

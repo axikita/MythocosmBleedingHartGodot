@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://r74r8hi5p1kl"]
 
-[ext_resource type="Shader" path="res://Scenes/Environments/Foliage/Grass/Shaders/PaintstrokeGrass_Shader.gdshader" id="1_dvm5y"]
+[ext_resource type="Shader" path="res://Scenes/Environments/Foliage/Grass/Shaders/paintstroke_grass.gdshader" id="1_dvm5y"]
 [ext_resource type="Texture2D" uid="uid://c7guvxixtm0ka" path="res://Scenes/Environments/Foliage/Grass/Textures/Grass_White_4Strokes_Blurred_256.png" id="2_np6a0"]
 
 [resource]
@@ -11,6 +11,6 @@ shader_parameter/rootColor = Color(0.00784314, 0.380392, 0.490196, 1)
 shader_parameter/subsurfColor = Color(0, 0.596078, 0.337255, 0.709804)
 shader_parameter/pinch = 0.0
 shader_parameter/playerPosition = Vector3(0, 0.2, 0)
-shader_parameter/interactionStrength = 0.2
-shader_parameter/radius = 0.5
+shader_parameter/interactionStrength = 0.1
+shader_parameter/radius = 1.0
 shader_parameter/albedoTex = ExtResource("2_np6a0")

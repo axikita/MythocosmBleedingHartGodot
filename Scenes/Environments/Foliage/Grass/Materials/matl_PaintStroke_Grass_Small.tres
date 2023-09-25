@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://cyv1m0gddvlf"]
 
-[ext_resource type="Shader" path="res://Scenes/Environments/Foliage/Grass/Shaders/PaintstrokeGrass_Shader.gdshader" id="1_sohik"]
+[ext_resource type="Shader" path="res://Scenes/Environments/Foliage/Grass/Shaders/paintstroke_grass.gdshader" id="1_sohik"]
 [ext_resource type="Texture2D" uid="uid://d05ouojosfhev" path="res://Scenes/Environments/Foliage/Grass/Textures/Grass_White_4Strokes_256.png" id="2_scrs4"]
 
 [resource]

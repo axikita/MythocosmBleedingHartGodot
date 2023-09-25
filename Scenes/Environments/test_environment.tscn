@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfl4rneyph7d2"]
 
-[ext_resource type="PackedScene" uid="uid://dy2u7kohcdbrm" path="res://Scenes/Greyboxing/staticBody_floor_8x8x1.tscn" id="1_bbo45"]
-[ext_resource type="PackedScene" uid="uid://bq4sdulrlowyj" path="res://Scenes/Greyboxing/staticBody_basic_cube.tscn" id="2_sklg8"]
-[ext_resource type="PackedScene" uid="uid://cwh52jeinesuy" path="res://Scenes/Greyboxing/staticBody_floor_8x2x1.tscn" id="3_j312p"]
+[ext_resource type="PackedScene" uid="uid://dy2u7kohcdbrm" path="res://Scenes/Greyboxing/StaticBody_Floor_8x8x1.tscn" id="1_bbo45"]
+[ext_resource type="PackedScene" uid="uid://bq4sdulrlowyj" path="res://Scenes/Greyboxing/StaticBody_BasicCube.tscn" id="2_sklg8"]
+[ext_resource type="PackedScene" uid="uid://cwh52jeinesuy" path="res://Scenes/Greyboxing/StaticBody_Floor_8x2x1.tscn" id="3_j312p"]
 [ext_resource type="PackedScene" uid="uid://dnglb6cf8a3nd" path="res://Scenes/Greyboxing/GrassGroundTile_8x8.tscn" id="4_dufpi"]
 
 [node name="test_environment" type="Node3D"]
