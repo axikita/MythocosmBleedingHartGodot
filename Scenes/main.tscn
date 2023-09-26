@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ohf6pfhfa7kb"]
+[gd_scene load_steps=8 format=3 uid="uid://ohf6pfhfa7kb"]
 
 [ext_resource type="PackedScene" uid="uid://dqp7vp5ebyx1j" path="res://Scenes/CameraRig.tscn" id="1_6h26d"]
 [ext_resource type="PackedScene" uid="uid://bqh7apn0uhx6t" path="res://Scenes/Characters/BleedingHart/Player_BleedingHart.tscn" id="2_p7eca"]
@@ -6,6 +6,7 @@
 [ext_resource type="Environment" uid="uid://n6kvdwkr2ve7" path="res://Rendering/new_environment.tres" id="4_f66o0"]
 [ext_resource type="Material" uid="uid://w1w8q5gnx88d" path="res://Scenes/Environments/matl_testFog.tres" id="5_wu6un"]
 [ext_resource type="PackedScene" uid="uid://bx53uk10s5b34" path="res://Scenes/Environments/Foliage/Grass/GrassTest.tscn" id="6_w7qyo"]
+[ext_resource type="PackedScene" uid="uid://cfv7hotgorkx3" path="res://Scenes/Environments/Props/Lantern/Lantern.tscn" id="7_sbwc0"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -28,6 +29,7 @@ environment = ExtResource("4_f66o0")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lighting"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.41843, -2.10811)
+visible = false
 light_color = Color(0, 0.807843, 0.807843, 1)
 light_energy = 6.0
 
@@ -37,3 +39,11 @@ shape = 0
 material = ExtResource("5_wu6un")
 
 [node name="GrassTest" parent="." instance=ExtResource("6_w7qyo")]
+
+[node name="LanternRoot" parent="." instance=ExtResource("7_sbwc0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
+visible = false
+
+[node name="LanternRoot2" parent="." instance=ExtResource("7_sbwc0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3)
+visible = false

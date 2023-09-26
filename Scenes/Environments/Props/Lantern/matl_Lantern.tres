@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bx1c2hbrhibem"]
+
+[ext_resource type="Texture2D" uid="uid://cji0s58p7vpea" path="res://Scenes/Environments/Props/Lantern/Lantern_LanternAlbedo_512.png" id="1_5an4p"]
+[ext_resource type="Texture2D" uid="uid://1ks4kxl5eqbd" path="res://Scenes/Environments/Props/Lantern/Lantern_LanternEmissive_512.png" id="2_o34a7"]
+
+[resource]
+transparency = 3
+alpha_hash_scale = 1.0
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("1_5an4p")
+emission_enabled = true
+emission_texture = ExtResource("2_o34a7")
